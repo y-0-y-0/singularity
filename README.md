@@ -1,61 +1,45 @@
-## Void is now deprecated.
-Void is deprecated and no longer accepting contributions.
-Thank you to everyone who contributed, both with lines of code and support from the community. Void remains open source and is still one of the best references to use when forking VS Code.
+# Singularity
 
-
-## Download
-
-To view a list of newer Void forks, see [Void Forks](http://github.com/voideditor/void-forks/).
-
-To download an old version of Void, see [Releases](https://github.com/voideditor/void/releases).
-
-## Forking VS Code
-
-If you're forking VS Code, you might still want to reference Void's logic, and see our [Codebase Guide](https://github.com/voideditor/void/blob/main/VOID_CODEBASE_GUIDE.md) and [How to Contribute](https://github.com/voideditor/void/blob/main/HOW_TO_CONTRIBUTE.md).
-
-- We mount React + Tailwind. This is not possible in plain VS Code, and required extending the build pipeline to compile React and [scope](https://github.com/andrewpareles/scope-tailwind) Tailwind ourselves.
-
-- You can copy our GitHub Actions to package, sign, and auto-update Void. VS Code's build pipeline is private, so this is normally very hard.
-
-- Our AI provider code is built from scratch, allowing us to support autocomplete (FIM) and other custom responses. We expose grammars for common `<thinking>` tags, tool tags, etc. Feel free to reference our architecture for using IPC and satisfying CSP.
-
-- Use our custom services to edit files. EditCodeService lets you show diffs as code streams in, even token by token. VoidModelService lets you edit files in the background and syncs OS files with your text buffers.
-
-- Everything we've done is 100% open source. See [repos](https://github.com/orgs/voideditor/repositories) for a complete picture of all the repos that make up Void.
-
-
-
-# Welcome to Void.
+An open-source AI code editor built on [Void](https://github.com/voideditor/void). Use any model, keep your data.
 
 <div align="center">
 	<img
 		src="./src/vs/workbench/browser/parts/editor/media/slice_of_void.png"
-	 	alt="Void Welcome"
+		alt="Singularity Welcome"
 		width="300"
-	 	height="300"
+		height="300"
 	/>
 </div>
 
-Use AI agents on your codebase, checkpoint and visualize changes, and bring any model or host locally. Void sends messages directly to providers without retaining your data.
+## Features
 
-This repo contains the full sourcecode for Void's Desktop app. If you're new, welcome!
+- **AI agents** on your codebase
+- **Checkpoints and visual diffs** to review and roll back changes
+- **Any model**: hosted providers or local models
+- **Privacy**: messages go directly to your provider, with no data retention
 
-- 🧭 [Website](https://voideditor.com)
+## Download
 
-- 🚙 [Roadmap](https://github.com/orgs/voideditor/projects/2)
+Releases are available on the [Releases page](https://github.com/y-0-y-0/singularity/releases).
 
-- 🔨 [Contribute](https://github.com/voideditor/void/blob/main/HOW_TO_CONTRIBUTE.md)
+## Build from source
 
+Singularity is a fork of [VS Code](https://github.com/microsoft/vscode), through Void. To set up a development environment, see [HOW_TO_CONTRIBUTE](./HOW_TO_CONTRIBUTE.md).
 
+For an overview of the codebase, see [VOID_CODEBASE_GUIDE](./VOID_CODEBASE_GUIDE.md).
 
+## About this fork
 
-## Reference
+[Void](https://github.com/voideditor/void) is deprecated and no longer accepting contributions. Singularity picks up from there as a fork of its source code.
 
-Void is a fork of the [vscode](https://github.com/microsoft/vscode) repository. For a guide to our codebase, see [VOID_CODEBASE_GUIDE](https://github.com/voideditor/void/blob/main/VOID_CODEBASE_GUIDE.md).
+## Contributing
 
-For a guide on how to develop your own version of Void, see [HOW_TO_CONTRIBUTE](https://github.com/voideditor/void/blob/main/HOW_TO_CONTRIBUTE.md) and [void-builder](https://github.com/voideditor/void-builder).
+Issues and pull requests are welcome on [GitHub](https://github.com/y-0-y-0/singularity).
 
+## Credits
 
+Singularity builds on the work of the [Void](https://github.com/voideditor/void) team and the [VS Code](https://github.com/microsoft/vscode) contributors. Thank you.
 
-## Support
-You can always reach us in our [Discord server](https://discord.gg/RSNjgaugJs) or contact us via email at hello@voideditor.com.
+## License
+
+Apache-2.0. See [LICENSE.txt](./LICENSE.txt). VS Code's own license is in [LICENSE-VS-Code.txt](./LICENSE-VS-Code.txt).
